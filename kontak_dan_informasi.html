@@ -32,15 +32,17 @@
   <section class="contact">
   <h2>Hubungi Kami</h2>
 
-  <form id="contactForm">
+    <form id="contactForm"
+      action="https://formspree.io/f/ID_FORM_KAMU"
+      method="POST">
     <label>Nama</label>
-    <input type="text" id="nama" required>
+    <input type="text" id="nama" name="nama" required>
 
     <label>Email</label>
-    <input type="email" id="email" required>
+    <input type="email" id="email"name="email" required>
 
     <label>Pesan</label>
-    <textarea id="pesan" rows="5" required></textarea>
+    <textarea id="pesan" name="pesan" rows="5" required></textarea>
 
     <button type="submit">Kirim Pesan</button>
   </form>
@@ -109,22 +111,27 @@
   </div>
 </footer>
   <form id="contactForm">
+    <form id="contactForm" action="https://formspree.io/f/mbgjvdak"
+      method="POST">
 
   <input
     type="text"
     id="nama"
+    name="nama"
     placeholder="Nama"
     required
   >
 
   <input
     type="email"
+    name="email"
     id="email"
     placeholder="Email"
     required
   >
 
-  <textarea
+ <textarea
+   name="pesan"
     id="pesan"
     placeholder="Tulis pesan..."
     required
