@@ -7,7 +7,7 @@
   items.forEach(i=>io.observe(i));
 const form = document.getElementById("contactForm");
 const status = document.getElementById("status");
-const scriptURL = "https://script.google.com/macros/s/AKfycby5aYT5e2RFondQfl-gF9ktSKWOSvEegq8DtgZXDa51TGBTM3OirX6GSFw0gtRmlqvX6A/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycby5EtCnlIcH1-38eJuMXkvcEPVTCvsuZzlOLWK8R1XavTM8s4qdL5LZcgnewbJniE40Og/exec";
 if (form) {
   form.addEventListener("submit", async function(e) {
     e.preventDefault();
