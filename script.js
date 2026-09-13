@@ -7,7 +7,7 @@
   items.forEach(i=>io.observe(i));
 const form = document.getElementById("contactForm");
 const status = document.getElementById("status");
-
+const scriptURL = "https://script.google.com/macros/s/AKfycby5aYT5e2RFondQfl-gF9ktSKWOSvEegq8DtgZXDa51TGBTM3OirX6GSFw0gtRmlqvX6A/exec";
 if (form) {
   form.addEventListener("submit", async function(e) {
     e.preventDefault();
@@ -22,12 +22,12 @@ if (form) {
 
     try {
       await fetch(
-        "https://script.google.com/macros/s/AKfycbykRERt_49lPWjTdJuXMwF5IQpNaeBmJeDihEEJqBnekwAk6T1A-t-c50lGq4c7qhjAKw/exec",
-        {
-          method: "POST",
-          body: JSON.stringify(data)
-        }
-      );
+    scriptURL,
+    {
+        method: "POST",
+        body: JSON.stringify(data)
+    }
+);
 
       status.textContent = "✅ Pesan berhasil dikirim!";
       form.reset();
